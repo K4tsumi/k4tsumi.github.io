@@ -15,7 +15,7 @@ function count() {
         let counter = Number(counterNmbr.value);
         
         //Quando for inserido 0 no contador, o valor será alterado para 1.
-        if (counter == 0) {
+        if (counter == 0) {N
             window.alert('Impossível contar. Será considerando Contador = 1.');
             counter = 1;
         }
@@ -23,12 +23,12 @@ function count() {
         if (ini < end) {
             //Counting up
             for (Nmbr = ini; Nmbr < end; Nmbr += counter) {
-                result.innerHTML += `<p>${Nmbr} \u{23E9}<p>`; //you also can use \u{23E9} to insert the emoji
+                result.innerHTML += `${Nmbr} \u{23E9}`; //you also can use \u{23E9} to insert the emoji
             }
         } else {
             //Counting down
             for (var Nmbr = ini; Nmbr > end; Nmbr -= counter) {
-                result.innerHTML += `<p>${Nmbr} \u{23E9}<p>`; //you also can use \u{23E9} to insert the emoji
+                result.innerHTML += `${Nmbr} \u{23E9}`; //you also can use \u{23E9} to insert the emoji
             }
         }
         result.innerHTML += `\u{1F3C1}`;
