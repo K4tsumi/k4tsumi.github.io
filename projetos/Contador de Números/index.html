@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contador de Números &#x23E9;</h1>
+    </header>
+    <section>
+        <div>
+            Insira um número inicial, um número final e de quanto em quanto devo contar: 
+            <p>Número inicial: <input type="number" id="initialNmbr" class="box"></p>
+            <p>Número final: <input type="number" id="endNmbr" class="box"></p>
+            <p>Contador: <input type="number" id="counterNmbr" class="box"></p>
+            <p><input type="button" value="Calcular" onclick="count()"></p>
+        </div>
+        <div id="result"> 
+            Calculando resultado...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2022 - Matheus Yamashita</p>
+        <input type="button" value="Voltar ao início" onclick="location.href = 'https:/k4tsumi.github.io'">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
