@@ -23,12 +23,12 @@ function count() {
         if (ini < end) {
             //Counting up
             for (Nmbr = ini; Nmbr < end; Nmbr += counter) {
-                result.innerHTML += `${Nmbr} \u{23E9}`; //you also can use \u{23E9} to insert the emoji
+                result.innerHTML += `<p>${Nmbr} \u{23E9}<p>`; //you also can use \u{23E9} to insert the emoji
             }
         } else {
             //Counting down
             for (var Nmbr = ini; Nmbr > end; Nmbr -= counter) {
-                result.innerHTML += `${Nmbr} \u{23E9}`; //you also can use \u{23E9} to insert the emoji
+                result.innerHTML += `<p>${Nmbr} \u{23E9}<p>`; //you also can use \u{23E9} to insert the emoji
             }
         }
         result.innerHTML += `\u{1F3C1}`;
