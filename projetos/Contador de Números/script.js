@@ -15,7 +15,7 @@ function count() {
         let counter = Number(counterNmbr.value);
         
         //Quando for inserido 0 no contador, o valor será alterado para 1.
-        if (counter == 0) {
+        if (counter == 0) {N
             window.alert('Impossível contar. Será considerando Contador = 1.');
             counter = 1;
         }
