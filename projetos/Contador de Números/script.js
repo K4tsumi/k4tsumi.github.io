@@ -13,7 +13,8 @@ function count() {
         let ini = Number(initialNmbr.value);
         let end = Number(endNmbr.value);
         let counter = Number(counterNmbr.value);
-        
+        let a = ini;
+
         //Quando for inserido 0 no contador, o valor será alterado para 1.
         if (counter == 0) {N
             window.alert('Impossível contar. Será considerando Contador = 1.');
@@ -22,16 +23,31 @@ function count() {
 
         if (ini < end) {
             //Counting up
+            while(a < end){
+                a += counter;
+                result.innerHTML += `${a} \u{23E9}`;
+                result.innerHTML += `\u{1F3C1}`;   
+            }
+            /* This is another option
             for (Nmbr = ini; Nmbr < end; Nmbr += counter) {
                 result.innerHTML += `${Nmbr} \u{23E9}`; //you also can use \u{23E9} to insert the emoji
             }
-        } else {
+            */
+        } else if (a > end) {
             //Counting down
+            while(a > end){
+                a -= counter;
+                result.innerHTML += `${a} \u{23E9}`;
+                result.innerHTML += `\u{1F3C1}`;
+            }
+            /* This is another option
             for (var Nmbr = ini; Nmbr > end; Nmbr -= counter) {
                 result.innerHTML += `${Nmbr} \u{23E9}`; //you also can use \u{23E9} to insert the emoji
             }
+            */
+        } else if (a == end) {
+            alert("Ops! Utilize números diferentes para os campos inicial e final.")
         }
-        result.innerHTML += `\u{1F3C1}`;
     }
     
 }
