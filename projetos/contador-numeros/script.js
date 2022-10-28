@@ -25,7 +25,7 @@ function count() {
             //Counting up
             while(a < end){
                 a += counter;
-                result.innerHTML += `${a} \u{23E9}`;   
+                result.innerHTML += `${a}, `;   
             }
             result.innerHTML += `\u{1F3C1}`;
             /* This is another option
@@ -37,7 +37,7 @@ function count() {
             //Counting down
             while(a > end){
                 a -= counter;
-                result.innerHTML += `${a} \u{23E9}`;
+                result.innerHTML += `${a}, `;
             }
             result.innerHTML += `\u{1F3C1}`;
             /* This is another option
