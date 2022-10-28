@@ -1,0 +1,32 @@
+body {
+    background: rgb(8, 79, 138);
+    font: normal 15pt 'Trebuchet MS'; /*The font can be changed here*/
+}
+
+header {
+    color: white;
+    text-align: center;
+} 
+
+section {
+    background: white; /*It creates a square in the center of the page*/
+    border-radius: 10px; /*It makes the border softer*/
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.568); /*It creates a shadow behind the box*/
+}
+
+div { /*Most of the general content may be changed here*/
+    text-align: center;
+}
+
+.box {
+    width: 50px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
