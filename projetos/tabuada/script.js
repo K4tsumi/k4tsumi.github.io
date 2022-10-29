@@ -11,5 +11,4 @@ function tabuada() {
             a++; //var a is only used to control
             num2++; //var used to increase the multiplier
         }
-    }
 }
