@@ -5,10 +5,6 @@ function tabuada() {
     var a = 0;
     res.innerHTML = ``; //if i dont put it here, the following calcutions will be added at the end
 
-    if (num_tab.length == 0) {
-        res.innerHTML = `hi`
-    } else {
-
     while(a <= 10) { //num 10 defines the limit of the calculation
             var b = num1 * num2;
             res.innerHTML += `<p>${num1} x ${a} = ${b}</p>`;
